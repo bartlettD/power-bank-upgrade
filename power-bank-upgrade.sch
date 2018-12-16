@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:power-bank-upgrade-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -323,7 +323,7 @@ U 1 1 5C09F815
 P 7850 1850
 F 0 "J2" H 7620 1841 50  0000 R CNN
 F 1 "USB_A" H 7620 1750 50  0000 R CNN
-F 2 "Connector_USB:USB3_A_Molex_48393-001" H 8000 1800 50  0001 C CNN
+F 2 "power-bank:USB_A_Samtec_USB-A-S-F-B-SM2.kicad_mod" H 8000 1800 50  0001 C CNN
 F 3 " ~" H 8000 1800 50  0001 C CNN
 	1    7850 1850
 	-1   0    0    -1  
@@ -348,14 +348,6 @@ Wire Wire Line
 Wire Wire Line
 	7950 2350 7900 2350
 Connection ~ 7900 2350
-Wire Wire Line
-	6000 3050 6000 1850
-Wire Wire Line
-	6000 1850 7550 1850
-Wire Wire Line
-	7550 1950 5900 1950
-Wire Wire Line
-	5900 1950 5900 3050
 $Comp
 L Device:C C3
 U 1 1 5C0A1DED
@@ -388,7 +380,7 @@ Wire Wire Line
 	6050 1400 6400 1400
 Connection ~ 6400 1400
 Wire Wire Line
-	5800 3050 5800 1400
+	5800 3050 5800 2950
 Wire Wire Line
 	5800 1400 6050 1400
 Connection ~ 6050 1400
@@ -414,7 +406,7 @@ U 1 1 5C0A5839
 P 5450 2300
 F 0 "SW1" H 5450 2585 50  0000 C CNN
 F 1 "SW_Push" H 5450 2494 50  0000 C CNN
-F 2 "Battery:BatteryHolder_Keystone_2993" H 5450 2500 50  0001 C CNN
+F 2 "Button_Switch_SMD:Panasonic_EVQPUJ_EVQPUA" H 5450 2500 50  0001 C CNN
 F 3 "" H 5450 2500 50  0001 C CNN
 	1    5450 2300
 	1    0    0    -1  
@@ -684,4 +676,19 @@ Rolim = 49.9k. 3A Output Limit\nRilim = 13.3k. 3A Input Limit\nRIcc = 49.9k 3A C
 NoConn ~ 5300 4150
 Text Label 7600 3350 0    50   ~ 0
 VBATT
+Wire Wire Line
+	5900 3050 5900 2950
+Wire Wire Line
+	5900 2950 5800 2950
+Connection ~ 5800 2950
+Wire Wire Line
+	5800 2950 5800 1400
+Wire Wire Line
+	6200 3050 6200 1850
+Wire Wire Line
+	6200 1850 7550 1850
+Wire Wire Line
+	7550 1950 6100 1950
+Wire Wire Line
+	6100 1950 6100 3050
 $EndSCHEMATC
