@@ -13,7 +13,7 @@ PDF Schematics, Gerbers and Images are available in the "Docs" directory.
 
 ## Introduction
 
-This is a single cell, Li-Ion USB Power bank based around an Monolitic Power 
+This is a single cell, Li-Ion USB Power bank based around an Monolithic Power 
 Solutions MP2632B IC.
 
 The board was designed to be broadly compatible with the plastics from a common
